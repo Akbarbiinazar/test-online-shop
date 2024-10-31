@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './\(styles\)/custom-base-styles.scss';
+
 body {
   color: black;
   /* background: var(--background); */
@@ -69,6 +71,6 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground; 
   }
 }

@@ -8,6 +8,7 @@ import { BiHeart, BiSearch } from 'react-icons/bi';
 import Text from '../../shared/ui/Text';
 import Link from 'next/link';
 import { SearchProduct } from '@/features/SearchProduct';
+import useMediaQuery from '@/shared/lib/hooks';
 
 type headerNavigationType = {
   title: string;

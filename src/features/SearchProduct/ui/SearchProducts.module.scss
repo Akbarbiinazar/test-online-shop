@@ -1,23 +1,16 @@
 .search {
-  position: relative;
-  width: 26.75rem;
-  height: 3.5rem;
-  margin-right: 4.688rem;
+  @apply relative w-[26.75rem] h-[3.5rem] mr-[4.688rem];
+
+  @media (max-width: 768px) { 
+    @apply mr-0 
+  }
 
   &__input {
-    width: 100%;
-    border-radius: 8px;
-    padding-right: 2.5rem;
-    font-size: 16px;
-    line-height: 24px;
-    color: #64748b;
-    background-color: #ffffff;
-    border: 1px solid #e2e8f0;
-    box-sizing: border-box;
+    @apply w-full rounded-lg pr-[2.5rem] text-base border-gray_300 border-[1px] ;
 
     &::placeholder {
-      color: #64748b;
-      opacity: 0.5;
+      
+      @apply text-black opacity-50
     }
   }
 }
