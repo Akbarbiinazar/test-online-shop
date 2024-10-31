@@ -1,0 +1,19 @@
+.breadcrumbs {
+  @apply flex;
+
+  &__list {
+    @apply flex gap-x-2;
+  }
+
+  &__item {
+    @apply flex items-center text-gray-600;
+
+    &--last {
+      @apply font-bold
+    }
+  }
+
+  &__link {
+    @apply text-black hover:text-blue-800 no-underline;
+  }
+}

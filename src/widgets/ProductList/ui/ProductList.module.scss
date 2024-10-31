@@ -1,0 +1,11 @@
+.products {
+  @apply flex flex-col gap-y-8;
+
+  &__list {
+    @apply flex flex-wrap max-w-[45rem];
+  }
+}
+
+.skeleton {
+  @apply bg-gray_300 rounded-lg h-72 w-60;
+}

@@ -1,0 +1,11 @@
+.filters {
+  @apply flex flex-col gap-y-6;
+
+  &__list {
+    @apply flex flex-col gap-y-5;
+
+    &_item {
+      @apply flex gap-2 items-center;
+    }
+  }
+}

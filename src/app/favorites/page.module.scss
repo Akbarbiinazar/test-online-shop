@@ -1,0 +1,11 @@
+.favourite {
+  @apply mt-[4.688rem];
+
+  // & > br {
+  //   @apply w-full h-[1px] bg-gray_300;
+  // }
+
+  &__title {
+    @apply text-3xl font-normal;
+  }
+}

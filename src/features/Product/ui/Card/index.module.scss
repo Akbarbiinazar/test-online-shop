@@ -1,0 +1,34 @@
+.card {
+  @apply relative w-[15rem] h-[24rem] overflow-y-auto px-5 py-2.5 border border-gray-300 bg-white rounded-lg shadow-md overflow-hidden;
+
+  &__wrapper {
+    @apply flex flex-col gap-y-12;
+  }
+  &__content {
+    @apply flex justify-between items-center;
+
+    &_descr {
+      @apply flex flex-col max-w-[8.438rem] w-full;
+    }
+  }
+  &__category {
+    @apply text-gray_500;
+  }
+
+  &__title {
+    @apply text-black overflow-ellipsis overflow-hidden whitespace-nowrap; 
+    @apply text-sm;
+  }
+
+  &__price {
+    @apply text-black text-2xl font-bold;
+  }
+}
+
+.favorite__icon {
+  @apply w-5 h-5 text-gray-300 cursor-pointer transition-all;
+
+  &--active {
+    @apply text-red-600;
+  }
+}

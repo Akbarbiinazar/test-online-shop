@@ -1,0 +1,34 @@
+.card {
+  @apply mt-7;
+
+  &__inner {
+    @apply flex gap-x-11;
+  }
+
+  &__content {
+    @apply w-full flex justify-between items-center;
+  }
+
+  &__info {
+    @apply flex flex-col gap-y-5 max-w-[13.125rem];
+
+    & > p {
+      @apply text-sm font-normal;
+    }
+
+    & > h3 {
+      @apply font-extrabold text-xl;
+    }
+  }
+
+  &__price {
+    @apply flex gap-x-7 items-center;
+
+    & > p {
+      @apply font-extrabold text-xl;
+    }
+    & > span {
+      @apply text-xs font-normal;
+    }
+  }
+}

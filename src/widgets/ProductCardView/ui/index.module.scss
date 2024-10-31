@@ -1,0 +1,54 @@
+.card {
+  @apply w-full;
+
+  &__inner {
+    @apply flex gap-x-7;
+  }
+
+  &__info {
+    @apply flex flex-col w-full;
+
+    & > .card__info_divider {
+      @apply mt-6 w-full h-[1px] bg-gray_300; 
+    }
+
+    &_top {
+      @apply flex justify-between w-full;
+    }
+
+    &_title {
+      @apply max-w-[16.25rem];
+
+      > h3 {
+        @apply font-extrabold text-xl;
+      }
+    }
+
+    &_btn {
+      @apply py-2.5 px-3 flex items-center gap-x-1 h-[2.375rem] rounded border border-gray-300;
+    }
+
+    &_bottom {
+      @apply flex justify-between w-full mt-[2.813rem];
+    }
+
+    &_description {
+      @apply flex flex-col gap-y-6 max-w-[32.688rem];
+
+      & > h3 {
+        @apply font-extrabold text-sm;
+      }
+    }
+
+    &_cta {
+      @apply flex flex-col gap-y-6;
+
+      & > p {
+        @apply font-extrabold text-xl text-end;
+      }
+      & > button {
+        @apply text-base rounded py-[0.5rem] px-[1rem] bg-yellow_500 text-white;
+      }
+    }
+  }
+}
